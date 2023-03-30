@@ -42,3 +42,19 @@ while True:
                 break
     else:
         print('Valor inválido')
+
+
+#Dia da entrega
+dia_da_semana = {'domingo': 0, 'segunda': 1, 'terca': 2, 'quarta': 3, 'quinta': 4, 'sexta': 5, 'sabado': 6}
+dia_compra = input('Digite o dia da semana em que a compra foi realizada: ').lower()
+dias_entrega = int(input('Digite a quantidade de dias para a entrega: '))
+
+if dias_entrega == 0:
+    print('chega hoje!')
+else:
+    numero_dia_compra = dia_da_semana[dia_compra]
+    numero_dia_entrega = (numero_dia_compra + dias_entrega) % 7
+
+    dia_entrega = list(dia_da_semana.keys())[list(dia_da_semana.values()).index(numero_dia_entrega)]
+
+    print('sera entregue', dia_entrega)
