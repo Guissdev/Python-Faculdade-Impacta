@@ -1,4 +1,4 @@
-#Avaliação 2 
+#Atividade contínua 2
 #Data de realização 29/03/2023
 
 #Jogo do par ou ímpar
