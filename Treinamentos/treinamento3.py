@@ -1,4 +1,4 @@
-'''#Números ímpares
+#Números ímpares
 count_impar = 0
 
 n = int(input())
@@ -61,14 +61,14 @@ fatorial = 1
 for i in range(1, num + 1):
     fatorial *= i
 
-print(fatorial)'''
+print(fatorial)
 
 
 #Maior e posição
 maior = 0
 posi = 0
 
-for i in range (1, 10):
+for i in range (1, 101):
     num = int(input())
     if num > maior:
         maior = num
